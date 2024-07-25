@@ -1,7 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const Index = () => {
+const About = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <header className="bg-white shadow-sm">
@@ -18,11 +17,15 @@ const Index = () => {
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Our Application</h1>
-        <p className="text-xl mb-6">This is a bare-bones web application that you can easily modify and build upon.</p>
-        <Button asChild>
-          <Link to="/about">Learn More</Link>
-        </Button>
+        <h1 className="text-4xl font-bold mb-4">About Us</h1>
+        <p className="text-xl mb-6">
+          We are a forward-thinking company dedicated to creating innovative solutions. 
+          Our mission is to provide high-quality products and services that make a difference in people's lives.
+        </p>
+        <p className="text-xl">
+          Founded in 2024, we've quickly grown to become a leader in our industry, 
+          thanks to our commitment to excellence and customer satisfaction.
+        </p>
       </main>
 
       <footer className="bg-gray-100">
@@ -34,4 +37,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default About;
